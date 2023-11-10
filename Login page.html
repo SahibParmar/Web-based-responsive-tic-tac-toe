@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js">
+	</script>
+
+	<title>Personal Information</title>
+
+
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+
+      .Lets_Start:hover{
+       background-color: rgb(15, 14, 13);
+      }
+    </style>
+
+
+
+
+    
+
+
+
+
+</head>
+
+<body style="background-color:gold; font-family: Sigmar;">
+	<div class="container" style="background-color: rgb(80, 3, 80); color: white;">
+    <div style="font-size: 24px; margin-left: 500px;margin-top: 40px; font-family: Sigmar;">Tell us something about you</div><br>
+<div style="font-size: small; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 500px;">(Not mandatory but suggested to let us improve your experiance)</div><br>
+	<form action="#" method="post" ng-app="" id="Form" style=>
+		<div style="margin-left: 560px;">
+			<label for="name">Name</label>
+			<input type="text" ng-model="n1" id="name" name="name" required onkeydown="key()"><br><br>
+			<label for="Nic_Name">Nic Name</label>
+			<input type="text" ng-model="n2" id="Nic_Name" name="Nic_Name" required><br><br>
+			<label for="gender">Gender</label>
+			<select id="gender" name="gender" ng-model="n4" required><br><br>
+				<option value="">Select your gender..</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select><br><br>
+			<label for="dob">Date of Birth</label>
+			<input type="date" id="dob" name="dob" ng-model="n5" required><br><br>
+                  <!-- <button  style="background-color: rgb(235, 144, 8); margin-left: 50px; font-size: larger; border-style:outset; border-color: yellow; " id="Sub">Let's Start</button> -->
+                  <input type="submit" style="background-color: rgb(235, 144, 8); margin-left: 50px; font-size: larger; border-style:outset; border-color: yellow; " id="Sub" value="Let's Start">
+		</div>
+		
+
+
+
+
+
+
+
+		<pre class="pad">
+
+         <div style="border: 2px solid black; font-size: larger; background-color: silver">
+			<div style="margin-left: 600px; font-size: xx-large;color: black;"><b><u>Please Validate</u></b></div>
+            <div style="font-size: xx-large; color: black;">
+				 <b>Name:</b>{{n1}} <br>
+				 <b>Nic Name:</b> {{n2}} <br>
+				 <b>Gender:</b>{{n4}} <br>
+				 <b>DOB:</b>  {{n5}} <br>
+			</div>
+		 </div>
+
+        </pre>
+		
+	<pre>
+    </div>
+
+</form>
+
+<div id="Thanks"> &nbsp; </div>
+
+
+  <script>
+    var myButton = document.getElementById("Sub");
+
+    myButton.addEventListener('click', function() {
+        event.preventDefault();
+    window.location.href = "file:///C:/Users/Om%20Enterprise/Desktop/Study/Nirma/Assignments/4th/Web%20technologies/Practical-10/Copy/21bce180_wt_Practical-10.html";
+    });
+
+    function key()
+          {
+            if(event.keyCode>=65 &&event.keyCode<=90 || event.keyCode==8 || event.keyCode==9 || event.keyCode==32)
+              {
+                getElementById()
+                return true;
+              }
+            else
+              {
+                event.preventDefault();
+                return false;
+              }
+          } 
+
+  </script>
+
+
+</body>
+</html>

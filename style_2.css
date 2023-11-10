@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .Tut{
+    font-size: xx-large;
+     margin-left: 900px;
+}
+.Tut:hover{
+background-color: rgb(32, 1, 32);
+cursor: pointer;
+} */
+
+#Play{
+    height: 40px;
+    width: 105px;
+    margin-top:14px;
+    margin-left:600px;
+    background-color:rgb(80, 3, 80);
+    border-radius:23%;
+    color: white;
+    font-size: 32px;
+    font-family: Sigmar;
+    padding-bottom:51px;
+    padding-left:10px;
+    padding-right:10px;
+    border-style:dotted;  
+    display: block; 
+}
+/* #Dancing_Dog{
+    display: none;
+} */
+
+nav{
+    background-color: rgb(80, 3, 80);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    align-items: center;
+    display: flex;
+    padding: 0 12px;                   
+    font-family: Sigmar;
+}
+nav ul{                                
+    list-style: none;
+}
+
+#gameContainer{
+    /* background-color: yellow; */
+    display: none;
+    margin-top: 12px;
+    justify-content: center;   
+}
+
+.container{     
+    display: grid;
+    grid-template-columns: repeat(3,10vw);          /* vw means viewpoint width */
+    grid-template-rows: repeat(3,10vw);  
+    font-family:Arial, Helvetica, sans-serif;        
+}
+
+
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;                 /* for main axis(X-axis) */
+    align-items: center;                      /*for cross axis(Y-axis)*/
+}
+.box:hover{
+    background-color: aqua;
+}
+
+
+.gameInfo{
+    padding: 34px;
+    font-family: Sigmar;
+    
+}
+#finish_image{
+    margin-top:30px;
+    display:none;
+}
+
+
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+.bl-0{
+    border-left:0;
+}
+.br-0{
+    border-right:0;
+}
+
+
+#turn_info{
+    font-size:25px;
+    margin-left: 20px;
+}
+
+#reset{
+    height: 40px;
+    width: 105px;
+    margin-top:14px;
+    background-color:rgb(156 164 154);
+    border-radius:23%;
+    color: #5b1405;
+    font-size: 32px;
+    font-family: Sigmar;
+    padding-bottom:51px;
+    padding-left:10px;
+    padding-right:10px;
+    border-style:unset;
+}
